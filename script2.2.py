@@ -37,9 +37,11 @@ stepsize = int(stepsize1)
 lower_threshold = int(lower_threshold1)
 upper_threshold = int(upper_threshold1)
 
+#finds the midpoint and range of upper and lower thresholds
 midpoint = int((upper_threshold + lower_threshold)/2)
 threshold_width = int((upper_threshold - lower_threshold)/2)
 
+#these funtions are used later in the code to quickly sort the location of the files
 class slicePosition:
     def __init__(self, name, location):
         self.name = name
