@@ -1,4 +1,4 @@
-#Revised version: instead of automatically adding in the upper and lower threhold, add in user input so that they control it
+#Revised version: instead of automatically adding in the upper and lower threshold, add in user input so that they control it
 #This is more user friendly, and more convenient for dicom files that need different dimensions for the best output
 import numpy as np
 from stl import mesh
@@ -12,7 +12,7 @@ from os import walk
 import re
 import datetime
 
-#Original code below:
+#Original code (from Dean) below:
 #stepsize = int(sys.argv[1])
 #lower_threshold = int(sys.argv[2])
 #upper_threshold = int(sys.argv[3])
@@ -78,6 +78,7 @@ for s in file_names:
 print("sorting by location")
 file_list.sort()
 
+#main function of converting the file starts here
 def main():
         #Full read and import
         print("loading image data")
