@@ -52,7 +52,14 @@ class slicePosition:
         return self.name
     def __lt__(self, other):
         return self.location < other.location
-
+    
+#this is an added funtion to group the points by location
+#THIS IS WHERE CODE NEEDS TO BE ADDED
+def group_loc(file_list):
+    #make a loop that can filters just the numbers and letters at the end of each index for location
+    #then sort them by how close they are to a handful of random letters and numbers
+    #to see how similar each are to eachother
+    return(file_list)
 
 #Get names of all dicom files in the given path
 file_names = []
@@ -77,6 +84,8 @@ for s in file_names:
 
 print("sorting by location")
 file_list.sort()
+#the following is added code
+file_list = group_loc(file_list)
 
 #main function of converting the file starts here
 def main():
