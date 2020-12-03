@@ -28,11 +28,11 @@ upperThresholdE = Entry(window,width=10)
 upperThresholdE.grid(column=1, row=2)
 
 
-#def clicked():
-    #
+def clicked():
+    execfile('testScript.py')
 
-#btn = Button(window, text="Click Me", command=clicked)
+btn = Button(window, text="Confirm Values", command=clicked)
 
-#btn.grid(column=2, row=0)
+btn.grid(column=3, row=0)
 
 window.mainloop()
